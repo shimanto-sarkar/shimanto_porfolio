@@ -1,0 +1,432 @@
+/* =================== all links =============== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* =================== all links =============== */
+
+/* =================== common css ============== */
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+:root{
+    --brand_color: #343434;
+    --primary_color : #fff;
+    --second_color : #748182;
+    --third_color : #999999;
+    --poppins : "Poppins", serif;
+    --montserrat : "Montserrat", serif;
+}
+.container{
+    padding: 0 60px;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+/* =================== common css ============== */
+
+/* ================== navbar css ================ */
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.70);
+    padding-bottom: 20px;
+}
+.navbar .logo{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: var(--montserrat);
+    color: var(--primary_color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+.navbar ul{
+    gap: 40px;
+    
+}
+.navbar ul li a{
+    font: 400 14px var(--poppins);
+    color: var(--primary_color) !important;
+    position: relative;
+    
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary_color);
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    transition: all linear 0.3s;
+}
+.navbar ul li a:hover:after{
+    width: 100%;
+}
+
+.navbar-nav{
+    align-items: center;
+    margin-top: 30px;
+}
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, 0.461);
+    color: white;
+}
+
+/* ================== navbar css ================ */
+/* ================== banner css ================ */
+
+.banner{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 450px 0 400px;
+    position: relative;
+    overflow: hidden;
+}
+.banner::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: .65;
+        z-index: 2;
+}
+
+#banner .text{
+    width: 100%;
+    z-index: 11;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    
+}
+#banner .text h2{
+    font: 800 50px var(--montserrat);
+    color: var(--primary_color);
+    margin-bottom: 10px;
+}
+#banner .text h1{
+    font: 200 60px var(--montserrat);
+    color: var(--primary_color);
+    margin-bottom: 10px;
+}
+#banner .text h1 span{
+    font-weight: 400;
+    transition: 2s;
+}
+#banner ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+#banner ul li a{
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .3s;
+}
+#banner ul li a:hover{
+    transform: scale(1.2);
+}
+
+/* ================== banner css ================ */
+
+/* ================== about css  ================ */
+
+#about{
+    padding: 100px 0;
+}
+
+#about .text h2{
+    font: 800 30px var(--montserrat);
+    color: var(--brand_color);
+    line-height: 33px;
+    margin-bottom:5px;
+}
+#about .text h3{
+    font: 400 14px var(--poppins);
+    color: var(--third_color);
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+#about .text p{
+    width: 640px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: var(--second_color);
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+#about .progress_one{
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#about .progress_one .single_card{
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #000;
+    padding-left: 10px;
+}
+#about .progress_one .single_card p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: 500 13px var(--montserrat);
+    color: var(--primary_color);
+    line-height: 14.3px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#about .progress_two{
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#about .progress_two .single_card{
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #000;
+    padding-left: 10px;
+}
+#about .progress_two .single_card p{
+    display: flex;
+    align-items: center;
+    gap: 430px;
+    font: 500 13px var(--montserrat);
+    color: var(--primary_color);
+    line-height: 14.3px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#about .progress_three{
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#about .progress_three .single_card{
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #000;
+    padding-left: 10px;
+}
+#about .progress_three .single_card p{
+    display: flex;
+    align-items: center;
+    gap: 470px;
+    font: 500 13px var(--montserrat);
+    color: var(--primary_color);
+    line-height: 14.3px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+#about .bottom_btn{
+    margin-top: 50px;
+    display: flex;
+    gap: 4px;
+}
+#about .bottom_btn .cv{
+    padding: 11px 31px;
+    font: 400 13px var(--poppins);
+    color: #EEEEEE;
+    background-color: #1C1C1C;
+    border-radius: 5px;
+    border: 1px solid #1C1C1C;
+    transition: .3s ease-in-out;
+}
+#about .bottom_btn .cv:hover{
+    background-color: white;
+    color: #000;
+}
+#about .bottom_btn .contact{
+    padding: 11px 31px;
+    font: 400 13px var(--poppins);
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #1C1C1C;
+    transition: .3s ease-in-out;
+}
+#about .bottom_btn .contact:hover{
+    background-color: #1C1C1C;
+    color: #EEEEEE;
+}
+
+
+
+/* ================== about css  ================ */
+
+/* ================== services css  ================ */
+
+#services{
+    padding: 100px 0;
+    background-color: #F7F7F7;
+}
+
+.heading h2{
+    font: 900 40px var(--montserrat);
+    color: var(--brand_color);
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#services .signle_card{
+    padding: 50px 36.5px;
+    background-color: var(--primary_color);
+    text-align: center;
+    transition: .3s linear;
+}
+#services .signle_card:hover{
+    transform: scale(1.05);
+}
+#services .signle_card h4{
+    padding: 20px;
+    background-color: #F4F4F4;
+    width: fit-content;
+    margin: auto;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+#services .signle_card:hover h4{
+    background-color: #000;
+    color: white;
+}
+#services .signle_card h3{
+    font: 800 18px var(--montserrat);
+    color: var(--brand_color);
+    line-height: 20px;
+    margin: 20px 0;
+}
+#services .signle_card p{
+    font: 400 14px var(--poppins);
+    color: var(--second_color);
+    line-height: 22.4px;
+}
+ .bottom_card{
+    margin-top: 24px;
+}
+
+/* ================== services css  ================ */
+
+/* ================== portfolio css  ================ */
+
+#portfolio{
+    padding: 100px 0;
+}
+
+#portfolio .img{
+    transition: .3s ease-in-out;
+    position: relative;
+    width: 360px;
+    height: 300px;
+}
+#portfolio .img:hover img{
+    opacity: .1;
+}
+#portfolio .img img{
+    width: 360px;
+    height: 300px;
+    transition: .3s ease-in-out;
+}
+
+#portfolio .img .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#portfolio .img .text h3{
+    font: 700 12px var(--poppins);
+    color: var(--brand_color);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s ease-in-out;
+    transform: translateY(-10px);
+}
+#portfolio .img:hover h3{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#portfolio .img .text .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .6s ease-in-out;
+    transform: translateY(10px);
+}
+#portfolio .img:hover .link{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#portfolio .img .text .link a{
+    padding: 5px 7px;
+    background-color: #000;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    transition: .3s ease-in-out;
+}
+#portfolio .img .text .link a:hover{
+    background-color: white;
+    color: #000;
+}
+
+
+/* ================== portfolio css  ================ */
+
