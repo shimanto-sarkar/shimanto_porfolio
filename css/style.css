@@ -28,7 +28,7 @@ a{
     --montserrat : "Montserrat", serif;
 }
 .container{
-    padding: 0 60px;
+    /* padding: 0 60px; */
 }
 img{
     width: 100%;
@@ -46,7 +46,7 @@ img{
 /* ================== navbar css ================ */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.70);
+    background-color: rgba(0, 0, 0);
     padding-bottom: 20px;
 }
 .navbar .logo{
@@ -183,7 +183,7 @@ img{
     margin-bottom: 20px;
 }
 #about .text p{
-    width: 640px;
+    max-width: 640px;
     font-size: 15px;
     font-weight: 500;
     font-family: var(--poppins);
