@@ -46,7 +46,7 @@ img{
 /* ================== navbar css ================ */
 
 .navbar{
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.70);
     padding-bottom: 20px;
 }
 .navbar .logo{
@@ -235,7 +235,8 @@ img{
 #about .progress_two .single_card p{
     display: flex;
     align-items: center;
-    gap: 430px;
+    /* gap: 430px; */
+    justify-content: space-between;
     font: 500 13px var(--montserrat);
     color: var(--primary_color);
     line-height: 14.3px;
@@ -260,7 +261,8 @@ img{
 #about .progress_three .single_card p{
     display: flex;
     align-items: center;
-    gap: 470px;
+    /* gap: 470px; */
+    justify-content: space-between;
     font: 500 13px var(--montserrat);
     color: var(--primary_color);
     line-height: 14.3px;
