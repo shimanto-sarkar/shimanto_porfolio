@@ -27,9 +27,7 @@ a{
     --poppins : "Poppins", serif;
     --montserrat : "Montserrat", serif;
 }
-.container{
-    /* padding: 0 60px; */
-}
+
 img{
     width: 100%;
     max-width: 100%;
@@ -529,6 +527,7 @@ img{
     font: 400 14px var(--poppins);
     color: #757575;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 #contact .message{
