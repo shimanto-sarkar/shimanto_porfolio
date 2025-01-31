@@ -91,7 +91,10 @@ img{
 
 /* ================== navbar css ================ */
 /* ================== banner css ================ */
-
+#banner{
+    position: relative;
+    overflow: hidden;
+}
 .banner{
     background-image: url(../images/bg.jpg);
     background-position: center;
@@ -159,6 +162,42 @@ img{
     transform: scale(1.2);
 }
 
+
+.span1{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    opacity: .7;
+    transform: translateY(-100%);
+    animation: span1 1s ease-in-out;
+}
+@keyframes span1 {
+    0%{
+        transform: translateY(0%);
+    }
+
+}
+.span2{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+    opacity: .7;
+    transform: translateY(100%);
+    animation: span1 1s ease-in-out;
+}
+@keyframes span1 {
+    0%{
+        transform: translateY(0%);
+    }
+
+}
+
 /* ================== banner css ================ */
 
 /* ================== about css  ================ */
@@ -204,7 +243,17 @@ img{
     border-radius: 5px;
     background-color: #000;
     padding-left: 10px;
+    animation: progress_one 2s linear alternate;
 }
+@keyframes progress_one {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
 #about .progress_one .single_card p{
     display: flex;
     align-items: center;
@@ -229,7 +278,20 @@ img{
     border-radius: 5px;
     background-color: #000;
     padding-left: 10px;
+    animation: progress_two 2s linear alternate;
 }
+
+@keyframes progress_two {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+
+
 #about .progress_two .single_card p{
     display: flex;
     align-items: center;
@@ -255,7 +317,20 @@ img{
     border-radius: 5px;
     background-color: #000;
     padding-left: 10px;
+    animation: progress_three 2s linear alternate;
+
 }
+@keyframes progress_three {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+
 #about .progress_three .single_card p{
     display: flex;
     align-items: center;
@@ -359,6 +434,9 @@ img{
 
 #portfolio{
     padding: 100px 0;
+}
+#portfolio .row{
+    margin: auto;
 }
 
 #portfolio .img{
